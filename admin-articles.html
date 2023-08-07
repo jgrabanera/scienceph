@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,6 +10,7 @@
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
   </head>
+
   <body>
     <div class="grid-container">
       <!-- Header -->
@@ -66,29 +68,70 @@
           <p class="font-weight-bold">ARTICLES</p>
         </div>
 
-        <div class="main-cards">
-          <p class="font-weight-bold">Add New Article</p>
-          <form action="/submit" method="post">
-            <label for="title">Title:</label>
-            <input type="text" id="title" name="title" required /><br />
+        <input type="button" value="+ NEW ARTICLE" />
+        <br>
 
-            <label for="author">Author:</label>
-            <input type="text" id="author" name="author" required /><br />
+        <div class="manage-article">
+          <div class="new-article">
+            <div class="article-img">
+              <img src="./assets/images/img-placeholder.png" alt="" /><br />
 
-            <label for="category">Category:</label>
-            <select id="category" name="category">
-              <option value="technology">Technology</option>
-              <option value="lifestyle">Lifestyle</option>
-              <option value="travel">Travel</option>
-              <!-- Add more options as needed --></select
-            ><br />
+              <div>
+                <label for="author">Video Link:</label>
+                <input type="text" id="video" name="video" required /><br />
+              </div>
+            </div>
+            <div class="article-content">
+              <p class="font-weight-bold">Article Contents</p>
+              <form action="/submit" method="post">
+                <label for="title">Article Title:</label>
+                <input type="text" id="title" name="title" required /><br /><br />
 
-            <label for="content">Content:</label><br />
-            <textarea id="content" name="content" rows="8" cols="50" required></textarea><br />
+                <div class="article-author">
+                  <div>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required /><br />
+                  </div>
+                  <div>
+                    <label for="author">Article Moderator:</label>
+                    <input type="text" id="moderator" name="moderator" required /><br />
+                  </div>
+                  <div>
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                      <option value="technology">Health and Medical Sciences</option>
+                      <option value="lifestyle">Agriculture</option>
+                      <option value="travel">Food and Nutrition</option>
+                      <!-- Add more options as needed -->
+                    </select><br />
+                  </div>
+                  <div>
+                    <label for="author">Publish Date:</label>
+                    <input type="date" id="date" name="date" required /><br />
+                  </div>
 
-            <input type="button" value="Submit" />
-          </form>
+                </div>
+                <label for="content">Content:</label><br />
+                <textarea id="content" name="content" rows="8" cols="50" required></textarea><br />
+                <div>
+                  <label for="author">URL:</label>
+                  <input type="text" id="url" name="url" /><br />
+                </div>
+                <div>
+                  <label for="author">Tags:</label>
+                  <input type="text" id="tag" name="tag" /><br />
+                </div>
+
+                <input type="button" value="SAVE" />
+              </form>
+            </div>
+
+
+          </div>
+
         </div>
+
+
       </main>
       <!-- End Main -->
     </div>
@@ -99,4 +142,5 @@
     <!-- Custom JS -->
     <script src="./scripts.js"></script>
   </body>
+
 </html>
