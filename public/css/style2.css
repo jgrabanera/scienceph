@@ -1,0 +1,22 @@
+.article-date-posted{
+    font-weight: bold;
+    color: rgb(172, 172, 172);
+}
+
+.text-container {
+    max-height: 200px; /* Adjust the height to control the visible text */
+    overflow: hidden;
+}
+
+.full-text {
+    margin: 0;
+}
+
+.see-more {
+    display: block;
+    color: blue; /* Customize the link color */
+}
+
+.text-container.expanded {
+    max-height: none;
+}

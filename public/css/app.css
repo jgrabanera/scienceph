@@ -1,0 +1,10 @@
+@media print {
+  .mynav {
+    display: none;
+    border: 1px solid red;
+  }
+
+  .printarea {
+    display: block;
+  }
+}

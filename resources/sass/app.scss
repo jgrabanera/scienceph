@@ -1,0 +1,40 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+
+
+// Variables
+@import 'variables';
+
+//@import '~@mdi/font/css/materialdesignicons.css';
+
+
+//ref website -> https://materialdesignicons.com/
+//npm i @mdi/font
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+
+//font awesome
+//@import '~font-awesome/css/font-awesome.css';
+//npm i font-awesome
+//https://fontawesome.com/v4.7.0/
+
+
+
+// html{
+//     background-color: #f8f8f8 !important;
+// }
+
+@media print {
+    .mynav{
+        display: none;
+        border: 1px solid red;
+    }
+    .printarea { display:block; }
+}
+
+
